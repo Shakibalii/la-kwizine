@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="theme-color" content="#FAF5EF">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E🌶️%3C/text%3E%3C/svg%3E">
+<title>La Kwizine Martiniere · Fried rice, noodles &amp; bol renversé</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap"><b>La Kwizine Martiniere</b><nav><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a></nav></div></header>
+
+<main>
+<div class="hero"><div class="wrap">
+  <div class="badge" id="badge"><i></i><span>Checking hours…</span></div>
+  <h1>La Kwizine Martiniere</h1>
+  <div class="creole">Vinn manze. Come and eat.</div>
+  <p>Welcome to a place where flavours from across Asia, India and Mauritius come together on one table!</p>
+  <p>Discover a delicious mix of Chinese favourites, authentic Mauritian dishes, aromatic Indian cuisine, and classic burgers with crispy golden chips - all prepared with passion and generous portions. Whether you're craving spicy noodles, comforting local flavours, fragrant Indian dishes, or a juicy burger and chips, there's something here for every appetite.</p>
+  <p><b>One restaurant, many flavours, endless cravings. Come hungry, leave happy</b></p>
+  <div class="row"><a class="btn" href="#menu">See the menu</a><a class="btn ghost" href="#visit">Find us</a></div>
+  <div class="potd" id="potd"></div>
+</div></div>
+
+<section id="menu"><div class="wrap">
+  <h2>Menu</h2>
+  <p class="lead">Pick a category or filter by protein. Prices are in Mauritian rupees (Rs).</p>
+  <div class="tools">
+    <div class="tabs" id="tabs" role="group" aria-label="Menu categories"></div>
+    
+    <label class="ctl">Show <select id="prot" style="width:auto"><option value="">everything</option><option value="veg">vegetarian</option><option value="chicken">chicken</option><option value="lamb">lamb</option><option value="seafood">seafood</option></select></label>
+  </div>
+  <div class="menu" id="menuList" aria-live="polite"></div>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+  <h2>Gallery</h2>
+  <p class="lead">A look at what comes out of our kitchen. Tap a photo to enlarge it.</p>
+  <div class="gal" id="gal"></div>
+</div></section>
+
+<section id="visit" style="padding-top:0"><div class="wrap">
+  <h2>Find us</h2>
+  <div class="visit">
+    <div>
+      <p class="lead" style="margin-bottom:12px">Martiniere Rd, Surinam 60909<br>Savanne District, Mauritius</p>
+      <p class="lead" style="margin:0 0 12px">Call or WhatsApp: <b id="phoneTxt"></b></p><div class="row"><a class="btn" id="callLink" href="#">Call</a><a class="btn ghost" id="chatLink" target="_blank" rel="noopener" href="#">WhatsApp</a><a class="btn ghost" id="mapLink" target="_blank" rel="noopener" href="#">Google Maps</a></div>
+    </div>
+    <table class="hours" id="hours" aria-label="Opening hours"></table>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© <span id="yr"></span> La Kwizine Martiniere · Surinam, Mauritius</div></footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer"><button class="lbx" data-lb="close" aria-label="Close photo">×</button><button class="lbn" data-lb="prev" aria-label="Previous photo">‹</button><figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure><button class="lbn r" data-lb="next" aria-label="Next photo">›</button></div>
+
+<script src="script.js"></script>
+</body>
+</html>
